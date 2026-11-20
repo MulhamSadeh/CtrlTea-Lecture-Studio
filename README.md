@@ -28,20 +28,6 @@ Some parts are already usable locally, while others still need testing and impro
 - **Documents:** LibreOffice, Pandoc, and OMML for Word equations
 - **OCR:** Tesseract
 
-## Public interactive preview
-
-I added a small [browser-only demo](demo/) so visitors can explore the dashboard layout and try editing a sample lecture. It uses fictional content and keeps all changes inside the visitor's browser. There are no real accounts, student files, or connections to our backend.
-
-The preview includes the course list, structured blocks, a simple editor, and a document preview. OCR, collaborative workflows, and server-side DOCX/PDF exports are **not** part of the public demo. See [demo setup](demo/README.md) for static hosting instructions.
-
-## Live interactive demo
-
-**[Try the Ctrl+Tea Lecture Studio demo](https://ctrltea-lecture-studio-demo.onrender.com/)**
-
-I put together a browser-only version so people can explore the interface without installing the full application. It includes a sample lecture with made-up content, basic editing, a document preview, and JSON download. Changes stay in the browser and aren't saved to our server.
-
-This demo is separate from the full application: it doesn't include accounts, OCR, backend document generation, or real lecture data. The full dashboard is still a work in progress.
-
 ## Try a sample lecture
 
 I added a small example about binary numbers so the format can be explored without using a real student's lecture or private course files.

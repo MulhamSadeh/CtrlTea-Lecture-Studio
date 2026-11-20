@@ -1,51 +1,14 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f6f1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'">
-<title>Ctrl+Tea Lecture Studio — Public Demo</title>
-<link rel="icon" href="./logo.png"><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="refresh" content="0;url=https://github.com/MulhamSadeh/CtrlTea-Lecture-Studio">
+<title>Ctrl+Tea — preview withdrawn</title>
 </head>
 <body>
-<div class="demo-label"><strong>PUBLIC DEMO</strong><span>هذه نسخة عرض تفاعلية ببيانات افتراضية، التعديلات لا تُحفظ على الخادم</span></div>
-<div class="shell">
-<aside class="sidebar">
-<div class="brand"><img src="./logo.png" alt="شعار Ctrl+Tea"><div><strong dir="ltr">Ctrl+Tea</strong><span>LECTURE STUDIO</span><small>مساحة لصناعة المعرفة</small></div></div>
-<p class="nav-caption">مساحة العمل</p>
-<nav aria-label="أقسام التجربة">
-<button class="nav active" data-tab="courses"><span>▤</span>المقررات<small>01</small></button>
-<button class="nav" data-tab="sources"><span>▱</span>المصادر<small>02</small></button>
-<button class="nav" data-tab="authoring"><span>✎</span>التأليف<small>03</small></button>
-<button class="nav" data-tab="editor"><span>☷</span>المحرر<small>04</small></button>
-<button class="nav" data-tab="preview"><span>▣</span>المعاينة<small>05</small></button>
-</nav>
-<div class="project"><small>المشروع الحالي</small><strong>محاضرة تجريبية</strong><span>الأعداد الثنائية · نسخة العرض</span></div>
-<div class="bottom">● Demo Preview <span>V1</span></div>
-</aside>
-<main>
-<header class="topbar"><span>Ctrl+Tea / <b id="breadcrumb">المقررات</b></span><div><span class="tag">نسخة تجريبية</span><a class="btn outline" href="https://github.com/MulhamSadeh/CtrlTea-Lecture-Studio" rel="noopener noreferrer" target="_blank">الكود على GitHub ↗</a></div></header>
-<div class="content">
-<section class="view" id="view-courses">
-<div class="page-heading"><div><small class="eyebrow">LECTURE WORKSPACE</small><h1>المقررات والمحاضرات</h1><p>مساحة لتجهيز محاضرات الجامعة ومراجعتها</p></div><span class="tag">بيانات تجريبية فقط</span></div>
-<div class="stats"><div><small>المقررات</small><b>01</b><span>مقرر افتراضي</span></div><div><small>المحاضرات</small><b>01</b><span>مثال للتجربة</span></div><div><small>الأقسام</small><b id="total-sections">01</b><span>ضمن المحاضرة</span></div><div><small>كتل المحتوى</small><b id="total-blocks">05</b><span>تعريفات وقوانين وتمارين</span></div></div>
-<div class="library"><div><h2>مقررات مساحة العمل</h2><button class="course-card" data-go="authoring"><span class="course-icon">01</span><h3>مادة تجريبية للعرض</h3><p>المحتوى اصطناعي وغير مأخوذ من محاضرات الطلاب</p><footer>فتح المحاضرة ←</footer></button></div><aside class="panel lecture-panel"><h2>المحاضرات</h2><button class="lecture-row" data-go="authoring"><strong>00 · الأعداد الثنائية</strong><small>محاضرة تجريبية · للتوضيح فقط</small></button><p>ما في حسابات طلاب أو محاضرات خاصة ضمن العرض العام.</p></aside></div>
-<div class="info"><strong>نسخة عرض، مو التطبيق الكامل</strong><p>تقدر تستعرض المحاضرة، تعدّل النصوص بشكل مؤقت، وتشوف المعاينة. معالجة المصادر وDOCX/PDF وصلاحيات الإدارة بتحتاج Backend وما هي مفعّلة هنا.</p></div>
-</section>
-<section class="view" id="view-sources" hidden>
-<div class="page-heading"><div><small class="eyebrow">SOURCE MATERIAL</small><h1>المصادر</h1><p>المثال الموجود بالداشبورد مصنوع خصيصاً للعرض العام.</p></div></div>
-<div class="panel source-panel"><h2>المصدر التجريبي</h2><p>نستخدم ملف JSON أصلي وغير مقتبس من المحاضرات الفعلية أو ملفات الطلاب.</p><div class="source-file"><strong>demo-lecture.json</strong><a href="./example.json" target="_blank" rel="noopener noreferrer">عرض الملف ↗</a></div><p class="warning">رفع ملفات PDF وتشغيل OCR غير متاحين في الـPublic Demo.</p><button class="btn primary" data-go="authoring">الانتقال للتأليف ←</button></div>
-</section>
-<section class="view" id="view-authoring" hidden>
-<div class="page-heading"><div><small class="eyebrow">STRUCTURED CONTENT</small><h1>التأليف</h1><p>الكتل المنظمة بتسهّل مراجعة التعاريف والقوانين والأمثلة.</p></div><button class="btn primary" data-go="editor">فتح المحرر ←</button></div>
-<div class="panel authoring"><div class="list-heading"><h2 id="lecture-title">مثال تعليمي</h2><small id="authoring-count"></small></div><div id="block-overview" class="overview"></div></div>
-</section>
-<section class="view" id="view-editor" hidden>
-<div class="page-heading"><div><small class="eyebrow">LECTURE EDITOR</small><h1>المحرر</h1><p>عدّل أي كتلة وشوف التغيير مباشرة بالمعاينة.</p></div><div class="actions"><button class="btn outline" id="reset">إعادة ضبط المثال</button><button class="btn primary" data-go="preview">معاينة ←</button></div></div>
-<div class="editor"><aside class="panel blocks-panel"><div class="list-heading"><h2>الكتل</h2><small id="edit-count"></small></div><div id="block-list"></div><button class="btn outline full" id="add-note">+ إضافة ملاحظة</button></aside><div class="panel edit-panel"><div class="list-heading"><small class="eyebrow">BLOCK EDITOR</small><span id="block-kind" class="tag"></span></div><label for="edit-title">عنوان الكتلة</label><input id="edit-title" maxlength="160"><label for="edit-text">المحتوى</label><textarea id="edit-text" rows="9" maxlength="6000"></textarea><p id="edit-help">التعديلات مؤقتة داخل هذه الصفحة.</p><button class="btn primary" data-go="preview">معاينة التعديلات ←</button></div></div>
-</section>
-<section class="view" id="view-preview" hidden>
-<div class="page-heading"><div><small class="eyebrow">DOCUMENT PREVIEW</small><h1>معاينة المحاضرة</h1><p>معاينة HTML توضيحية؛ التصدير الحقيقي لملفات Word وPDF غير متوفر في العرض العام.</p></div><div class="actions"><button class="btn outline" id="download">تنزيل JSON</button><button class="btn primary" id="print">طباعة المعاينة</button></div></div>
-<div class="preview"><aside class="panel summary"><small class="eyebrow">DOCUMENT INFO</small><h3 id="info-title"></h3><p id="info-course"></p><div class="summary-row">الأقسام <strong id="info-sections"></strong></div><div class="summary-row">الكتل <strong id="info-blocks"></strong></div><button class="btn outline full" data-go="editor">الرجوع للمحرر ←</button><p>ملف JSON يُنزّل على جهازك فقط، ولا يتم حفظه على خادم.</p></aside><article id="paper" class="paper"></article></div>
-</section>
-</div><div id="toast" role="status" aria-live="polite"></div>
-</main></div></body></html>
+<p>The public demo was removed because it did not accurately represent Ctrl+Tea Lecture Studio.</p>
+<p><a href="https://github.com/MulhamSadeh/CtrlTea-Lecture-Studio">View the actual project source</a></p>
+</body>
+</html>
