@@ -7,7 +7,7 @@ $env:PYTHONIOENCODING = 'utf-8'
 
 function Run-Winget([string]$PackageId) {
     if (-not (Get-Command winget.exe -ErrorAction SilentlyContinue)) {
-        throw 'WinGet is missing. Install App Installer from Microsoft Store, or install the prerequisites manually (README_WINDOWS_AR.md).'
+        throw 'WinGet is missing. Install App Installer from Microsoft Store, or install the prerequisites manually (docs/platforms/README_WINDOWS_AR.md).'
     }
     Write-Host "Installing $PackageId ..."
     & winget.exe install --source winget --id $PackageId --exact --architecture x64 --silent --accept-package-agreements --accept-source-agreements

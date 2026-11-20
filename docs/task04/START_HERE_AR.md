@@ -17,7 +17,7 @@
 
 ## البداية
 
-ابدأ بـSUPER_ADMIN_SETUP.md. بعد إعداد PostgreSQL وخدماته المقيدة، شغّل الترقية0002، سجّل حساب المالك وفعّل بريده، ثم استخدم الأمر المحلي المحمي:
+ابدأ بـ[دليل إعداد Super Admin](SUPER_ADMIN_SETUP.md). بعد إعداد PostgreSQL وخدماته المقيدة، شغّل الترقية0002، سجّل حساب المالك وفعّل بريده، ثم استخدم الأمر المحلي المحمي:
 
 ```bash
 python -m ctrltea.bootstrap invite --email "$CTRLTEA_OWNER_EMAIL"

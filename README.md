@@ -28,6 +28,19 @@ Some parts are already usable locally, while others still need testing and impro
 - **Documents:** LibreOffice, Pandoc, and OMML for Word equations
 - **OCR:** Tesseract
 
+## Repository structure
+
+- `frontend/` — React and TypeScript dashboard.
+- `backend/ctrltea/` — FastAPI application and lecture-processing code.
+- `migrations/` — database migrations.
+- `tests/` — automated tests.
+- `scripts/` — local setup, launch and maintenance commands.
+- `tools/academic_quality/` — academic-content validation utilities.
+- `docs/` — platform guides, technical documentation and older task notes.
+- `examples/` — sample content for local development.
+
+The older Task03/Task04 notes are kept for reference; they don't replace the current instructions above.
+
 ## Run locally
 
 You'll need Python 3.11+, Node.js, LibreOffice (including Math), Pandoc, and Tesseract with Arabic/English language data. See [README_AR.md](README_AR.md) for more details.

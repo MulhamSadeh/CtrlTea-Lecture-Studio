@@ -1,7 +1,7 @@
-Task04: ابدأ بـ START_HERE_TASK04_AR.md وتعليمات docs/task04/SUPER_ADMIN_SETUP.md.
+Task04: ابدأ بـ[دليل Task04](docs/task04/START_HERE_AR.md) وتعليمات [إعداد Super Admin](docs/task04/SUPER_ADMIN_SETUP.md).
 المصادقة مطلوبة افتراضيًا؛ تعليمات V1/Task03 أدناه تاريخية وليست إعداد حسابات04.
 
-راجع UPDATE_GUIDE_AR.md لتحديثات الاتجاه والمعادلات والتخطيط واستيراد Word. لم تُشغّل اختبارات على هذا التحديث.
+راجع [دليل التحديث](docs/guides/UPDATE_GUIDE_AR.md) لتحديثات الاتجاه والمعادلات والتخطيط واستيراد Word. لم تُشغّل اختبارات على هذا التحديث.
 
 # Ctrl+Tea Lecture Studio
 
@@ -9,7 +9,7 @@ Task04: ابدأ بـ START_HERE_TASK04_AR.md وتعليمات docs/task04/SUPER
 
 ## Windows
 
-لنسخة Windows x64: افتح `Install-Windows.cmd` مرة واحدة، ثم `Start-Windows.cmd`. التشخيص عبر `Check-Windows.cmd`. اقرأ [دليل ويندوز](README_WINDOWS_AR.md) وحدود الاختبار؛ هذه حزمة تشغيل وليست EXE مستقلًا. لا تحتاج Nix أو Node للتشغيل.
+لنسخة Windows x64: افتح `Install-Windows.cmd` مرة واحدة، ثم `Start-Windows.cmd`. التشخيص عبر `Check-Windows.cmd`. اقرأ [دليل ويندوز](docs/platforms/README_WINDOWS_AR.md) وحدود الاختبار؛ هذه حزمة تشغيل وليست EXE مستقلًا. لا تحتاج Nix أو Node للتشغيل.
 
 ## حزمة التنزيل المصححة
 
