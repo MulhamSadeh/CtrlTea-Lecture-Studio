@@ -1,0 +1,80 @@
+[
+  {
+    "family": "NotoNaskhArabic",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic[wght].ttf",
+    "instances": [
+      400,
+      700
+    ],
+    "download_sha256": {
+      "NotoNaskhArabic-Regular.ttf": "a1dcc0a0528bc3f4475897a8ad2cea22862e9e41d03aa3438d62d6923317cb2c",
+      "NotoNaskhArabic-Bold.ttf": "d74a8b790a2e41d09729c4b26669176f191d0676f02d3ae33f7e63eed14758ad"
+    },
+    "ref": "main"
+  },
+  {
+    "family": "NotoSansArabic",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansarabic/NotoSansArabic[wdth,wght].ttf",
+    "instances": [
+      400,
+      700
+    ],
+    "download_sha256": {
+      "NotoSansArabic-Regular.ttf": "fb79231b875fbb61acedd9d53190b24de3e407646b097e62c69e807bf4e364fd",
+      "NotoSansArabic-Bold.ttf": "dd1cee7bc97ac9cf5b5f5f335a3e355e39ee65be20950b364b161d7ac575e29c"
+    },
+    "ref": "main"
+  },
+  {
+    "family": "SourceSerif4",
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-serif/release/VAR/SourceSerif4Variable-Roman.ttf",
+    "instances": [
+      400,
+      700
+    ],
+    "download_sha256": {
+      "SourceSerif4-Regular.ttf": "02b731bec855b5ac7af072674f0fb85f62c53a13dc211235be92289cb8de8f01",
+      "SourceSerif4-Bold.ttf": "440a5909945c3fd5749b0be64517d27043d31fbccb3bc2fb669482c971b2b06b"
+    },
+    "ref": "release"
+  },
+  {
+    "family": "SourceSans3",
+    "url": "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/VF/SourceSans3VF-Upright.ttf",
+    "instances": [
+      400,
+      700
+    ],
+    "download_sha256": {
+      "SourceSans3-Bold.ttf": "b78c1499e8618d1c986ce0d08e155c1e0f0e43cb943e2930a8a78ac5b929d696",
+      "SourceSans3-Regular.ttf": "cdd6508faefad89187f0148498e6b62daaf1572d0e4b294a418609c8ed036675"
+    },
+    "ref": "release"
+  },
+  {
+    "family": "Latin Modern Math",
+    "source": "TeX Live Latin Modern Math distribution, GUST e-foundry",
+    "url": "https://www.gust.org.pl/projects/e-foundry/lm-math",
+    "version": "Version 1.959",
+    "download_sha256": {
+      "LatinModernMath-Regular.otf": "6075562b771f8b82f0c179e363389684f2dd09de30038269e2628e504bd7be0f"
+    },
+    "license": "GUST Font License"
+  },
+  {
+    "family": "Cairo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cairo/Cairo[slnt,wght].ttf",
+    "instances": [
+      400,
+      700
+    ],
+    "axes": {
+      "slnt": 0
+    },
+    "license": "SIL Open Font License 1.1",
+    "download_sha256": {
+      "Cairo-Regular.ttf": "32806f2bb184ed1dbd18859d732bafa02b54d2e4ee4d81d2fe8cbc2a2093020d",
+      "Cairo-Bold.ttf": "1792702ec5a77bacb1ac2941d17cfd04a89df60250949a56ca94774c4036967b"
+    }
+  }
+]

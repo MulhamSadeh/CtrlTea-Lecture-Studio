@@ -1,0 +1,6 @@
+# Task04 authentication additions tested on Python3.12/Linux; see TEST_RESULTS.
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.1.0
+email-validator==2.3.0
+dnspython==2.9.0
+Pillow==12.3.0

@@ -1,0 +1,27 @@
+Task04: ابدأ بـ START_HERE_TASK04_AR.md وتعليمات docs/task04/SUPER_ADMIN_SETUP.md.
+المصادقة مطلوبة افتراضيًا؛ تعليمات V1/Task03 أدناه تاريخية وليست إعداد حسابات04.
+
+راجع UPDATE_GUIDE_AR.md لتحديثات الاتجاه والمعادلات والتخطيط واستيراد Word. لم تُشغّل اختبارات على هذا التحديث.
+
+Windows x64:
+1. Extract the entire archive.
+2. Run Install-Windows.cmd once (internet required).
+3. Run Start-Windows.cmd.
+4. Read README_WINDOWS_AR.md. Native Windows installation was not available for testing here.
+
+Ctrl+Tea Lecture Studio — V1
+
+1. افتح README_AR.md لدليل التشغيل والاستخدام.
+2. على NixOS من مجلد المشروع:
+   nix develop
+   python scripts/start.py
+3. افتح http://127.0.0.1:8765
+4. لتجربة المشاريع الجاهزة، اختر «استعادة مشروع» وارفع أحد أرشيفات examples/projects.
+5. اختر لون المحاضرة عند إنشائها أو من إعداداتها: القرفة، العسل، الزيتوني. ثم أعد التصدير لتطبيقه.
+6. تجد Word وPDF اللذين جرى اختبارهما في examples/study-exports؛ العينة الحالية Control_OMML_Fixed ومعها التحكم السابق والإحصاء بالثيمات الثلاثة.
+7. المقارنة البصرية والاختبارات في docs/Study_Notes_Visual_Review.pdf وdocs/OMML_REVIEW_AR.md.
+
+ملف إعداد NixOS مرفق، لكن Nix وMicrosoft Word لم يتوفرا للاختبار هنا.
+الاختبار الفعلي تم على Linux وChromium وPandoc وLibreOffice.
+
+إصلاح OMML الحالي: Cairo للنص، Latin Modern Math للمعادلات، عزل LTR، وحماية ارتفاع السطر. بعد التحديث حافظ على data ثم أعد التصدير فقط؛ لا حاجة لإعادة التأليف.

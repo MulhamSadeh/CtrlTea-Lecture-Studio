@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "title": "مثال تعليمي — الأعداد الثنائية",
+  "course": "مادة تجريبية للعرض (Demo)",
+  "number": "00",
+  "doctor": "",
+  "sections": [
+    {
+      "id": "demo-section-basics",
+      "title": "مقدمة إلى نظام العد الثنائي",
+      "palette": "olive",
+      "complete": false,
+      "blocks": [
+        {
+          "id": "demo-definition",
+          "kind": "definition",
+          "title": "النظام الثنائي",
+          "text": "النظام الثنائي يستخدم الرقمين 0 و1 لتمثيل القيم. هذه فقرة تجريبية من إنشاء المشروع، وليست مقتبسة من أي محاضرة جامعية.",
+          "origin": "clarification",
+          "refs": []
+        },
+        {
+          "id": "demo-rule",
+          "kind": "rule",
+          "title": "قيمة الخانات",
+          "text": "كل خانة في العدد الثنائي تمثل قوة من قوى العدد 2، بدءاً من اليمين بالأس 0.",
+          "origin": "clarification",
+          "refs": []
+        },
+        {
+          "id": "demo-equation",
+          "kind": "equation",
+          "latex": "(1011)_2 = 1\\cdot 2^3+0\\cdot 2^2+1\\cdot 2^1+1\\cdot 2^0=11",
+          "origin": "clarification",
+          "refs": []
+        },
+        {
+          "id": "demo-exercise",
+          "kind": "exercise",
+          "title": "تمرين محلول",
+          "problem": "حوّل العدد الثنائي 1101 إلى النظام العشري.",
+          "givens": "العدد الثنائي: 1101",
+          "steps": [
+            "نحدد قيم الخانات من اليمين: 1، 2، 4، 8.",
+            "نجمع قيم الخانات التي تحتوي الرقم 1: 8 + 4 + 1."
+          ],
+          "result": "(1101)₂ = 13₁₀",
+          "origin": "additional_exercise",
+          "refs": []
+        },
+        {
+          "id": "demo-note",
+          "kind": "note",
+          "text": "هذه بيانات عرض توضيحية. المشروع الحقيقي يعتمد على مصادر أكاديمية معتمدة ومراجعة بشرية قبل النشر.",
+          "origin": "clarification",
+          "refs": []
+        }
+      ]
+    }
+  ]
+}

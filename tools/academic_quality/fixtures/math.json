@@ -1,0 +1,189 @@
+{
+  "calculations": [
+    {
+      "kind": "row",
+      "id": "row-good",
+      "weights": [
+        "1",
+        "-1"
+      ],
+      "rows": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "5"
+        ],
+        [
+          "1",
+          "2/3",
+          "0",
+          "1/3",
+          "4"
+        ]
+      ],
+      "expected": [
+        "0",
+        "1/3",
+        "1",
+        "-1/3",
+        "1"
+      ]
+    },
+    {
+      "kind": "row",
+      "id": "row-bad",
+      "weights": [
+        "1",
+        "-1"
+      ],
+      "rows": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "5"
+        ],
+        [
+          "1",
+          "2/3",
+          "0",
+          "1/3",
+          "4"
+        ]
+      ],
+      "expected": [
+        "0",
+        "2/3",
+        "1",
+        "-1/3",
+        "1"
+      ]
+    },
+    {
+      "kind": "feedback",
+      "id": "feedback--",
+      "sign": "-",
+      "forward": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "4",
+          "1"
+        ]
+      },
+      "feedback": {
+        "numerator": [
+          "3"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      "expected": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "10",
+          "1"
+        ]
+      }
+    },
+    {
+      "kind": "feedback",
+      "id": "feedback-+",
+      "sign": "+",
+      "forward": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "4",
+          "1"
+        ]
+      },
+      "feedback": {
+        "numerator": [
+          "3"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      "expected": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "-2",
+          "1"
+        ]
+      }
+    },
+    {
+      "kind": "feedback",
+      "id": "feedback-wrong",
+      "sign": "+",
+      "forward": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "4",
+          "1"
+        ]
+      },
+      "feedback": {
+        "numerator": [
+          "3"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      "expected": {
+        "numerator": [
+          "2"
+        ],
+        "denominator": [
+          "10",
+          "1"
+        ]
+      }
+    },
+    {
+      "kind": "fraction",
+      "id": "fraction",
+      "value": "12/18",
+      "expected": "2/3"
+    },
+    {
+      "kind": "identity",
+      "id": "identity",
+      "left": {
+        "numerator": [
+          "4",
+          "1"
+        ],
+        "denominator": [
+          "0",
+          "1"
+        ]
+      },
+      "expected": {
+        "numerator": [
+          "8",
+          "2"
+        ],
+        "denominator": [
+          "0",
+          "2"
+        ]
+      }
+    }
+  ]
+}

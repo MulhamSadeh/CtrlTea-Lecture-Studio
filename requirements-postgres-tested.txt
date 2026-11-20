@@ -1,0 +1,5 @@
+# Exact persistence/tool versions exercised during Task03; base app requirements
+# remain in pyproject.toml. pgserver/test-host launcher are NOT app dependencies.
+psycopg[binary]==3.3.6
+alembic==1.20.1
+SQLAlchemy==2.1.6

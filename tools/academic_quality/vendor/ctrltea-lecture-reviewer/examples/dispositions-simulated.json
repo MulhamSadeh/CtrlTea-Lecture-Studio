@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "verified",
+  "assessment": {
+    "document": {
+      "id": "lecture",
+      "name": "case02/lecture.md",
+      "sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01"
+    },
+    "sources": [
+      {
+        "id": "source",
+        "name": "case02/source.md",
+        "sha256": "df0727c3fc58e8733e485f487483f776ef762e7ef472853bf7085450d694ee4f"
+      }
+    ],
+    "skill_version": "AQ-05 1.0.0",
+    "rubric_version": "AQ01-provisional-1",
+    "metadata": {
+      "reviewer": "مراجعة AQ05 للمقتطف التجريبي",
+      "model": null,
+      "configuration": "نص محدد النطاق؛ حساب كسور مستقل",
+      "created_at": "2026-11-05"
+    },
+    "coverage": {
+      "status": "complete",
+      "reviewed_scope": "المحور الأول فقط، جميع أسطر المقتطف ومصدره",
+      "reviewed_locations": [
+        "lecture.md كاملًا",
+        "source.md كاملًا"
+      ],
+      "unreviewed_locations": [],
+      "source_fidelity": "verified",
+      "source_inventory": [
+        {
+          "item": "اختيار المحور وتطبيعه والتصفير وقراءة الحل",
+          "source_locator": "source.md كاملًا",
+          "document_locator": "lecture.md كاملًا",
+          "status": "present"
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "E1",
+        "artifact_id": "lecture",
+        "locator": "lecture.md: R_S1 الجديد",
+        "method": "قراءة النص وحساب كسور دقيق مستقل",
+        "observation": "المعامل الثاني مكتوب 2/3",
+        "result": "1−2/3=1/3؛ المتجه الصحيح (0,1/3,1,-1/3,1)",
+        "tool_version": "Python fractions"
+      },
+      {
+        "id": "E2",
+        "artifact_id": "source",
+        "locator": "source.md: الصف المحوري وطرح صف S1",
+        "method": "مطابقة مقتطف النطاق",
+        "observation": "يعطي الأصل (0,1/3,1,-1/3,1)",
+        "result": "اختلاف مثبت مع المتن في معامل x2 فقط",
+        "tool_version": null
+      },
+      {
+        "id": "E3",
+        "artifact_id": "lecture",
+        "locator": "lecture.md كاملًا، مقتطف المحور الأول",
+        "method": "قراءة كاملة للنص المنظم؛ لا مستند ورقي ضمن النطاق",
+        "observation": "النموذج والصفوف والاختيار والتطبيع والتصفير وقراءة الحل موجودة؛ لا رسم أو جدول مستقل",
+        "result": "التسلسل والتفسير والتمثيل الرمزي متاح؛ لا حكم على تصدير Word غير مقدم",
+        "tool_version": null
+      }
+    ],
+    "dimensions": [
+      {
+        "criterion": "scientific",
+        "weight": 30,
+        "effective_weight": 35.294117647058826,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 75,
+        "reason": "نتائج المحور: خطأ موضعي مؤكد في معامل واحد؛ سلامة بقية النتيجة لا تزيل الإنذار",
+        "evidence_ids": [
+          "E1",
+          "E2"
+        ],
+        "units": [
+          {
+            "id": "scientific-1",
+            "scope": "نتائج المحور الأول كوحدة حسابية واحدة",
+            "rating": 3,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "completeness",
+        "weight": 20,
+        "effective_weight": 23.529411764705884,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "completeness-1",
+            "scope": "عناصر مقتطف المصدر: النموذج والصفوف والاختيار والتطبيع والتصفير والقراءة",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "math",
+        "weight": 20,
+        "effective_weight": 23.529411764705884,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "math-1",
+            "scope": "الرموز والعمليات المتجهية",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "diagrams_tables",
+        "weight": 15,
+        "effective_weight": 0,
+        "status": "not_applicable",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": null,
+        "reason": "لا أشكال ولا جداول مطلوبة في المقتطف",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": []
+      },
+      {
+        "criterion": "writing",
+        "weight": 10,
+        "effective_weight": 11.764705882352942,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "writing-1",
+            "scope": "الشرح الذي يربط اختيار المحور بتصفير العمود",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "organization",
+        "weight": 5,
+        "effective_weight": 5.882352941176471,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "organization-1",
+            "scope": "ترتيب المقتطف النصي",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      }
+    ],
+    "overall_score": 91.17647058823529,
+    "withheld_reason": null,
+    "findings": [
+      {
+        "id": "QA-001",
+        "criterion": "scientific",
+        "rule_id": "math.row-operation",
+        "rule_version": "1",
+        "severity": "critical",
+        "critical_status": "confirmed",
+        "location": "lecture.md: R_S1 الجديد، المعامل الثاني",
+        "diagram_type": null,
+        "provenance": "not_applicable",
+        "observation": "المعامل الثاني 2/3",
+        "interpretation": "لا يساوي نتيجة العملية المعلنة ويؤثر في المحور التالي",
+        "recommendation": "تصحيح القيمة إلى 1/3 بعد مراجعة بشرية؛ لم يُعدل الملف",
+        "verification_status": "verified",
+        "confidence": "high",
+        "evidence_ids": [
+          "E1"
+        ],
+        "source_evidence_ids": [
+          "E2"
+        ]
+      }
+    ],
+    "critical_finding_ids": [
+      "QA-001"
+    ],
+    "limitations": [
+      "مثال تحكم في خطأ مزروع بمقتطف؛ ليس اعتمادًا للمحاضرة كاملة",
+      "لا اختبار Word/PDF ضمن هذا التقرير النصي؛ لهما تقريران منفصلان"
+    ],
+    "recommendation": "تحتاج مراجعة بشرية للخطأ الحرج رغم الدرجة المرتفعة؛ لا اعتماد آلي",
+    "extensions": {}
+  },
+  "assessment_sha256": "1581d1ac97ed93a05ae226d8ddbf75dcdf7b9f6c5fabab14ddf538b10d740b21",
+  "human_events": [
+    {
+      "event_id": "1",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "ignore",
+      "scope": "finding",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": null,
+      "rule_version": null,
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {},
+      "verification": null
+    },
+    {
+      "event_id": "2",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "restore",
+      "scope": "finding",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": null,
+      "rule_version": null,
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {},
+      "verification": null
+    },
+    {
+      "event_id": "3",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "defer",
+      "scope": "finding",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": null,
+      "rule_version": null,
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {},
+      "verification": null
+    },
+    {
+      "event_id": "4",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "restore",
+      "scope": "finding",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": null,
+      "rule_version": null,
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {},
+      "verification": null
+    },
+    {
+      "event_id": "5",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "ignore_rule",
+      "scope": "rule",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": "math.row-operation",
+      "rule_version": "1",
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {},
+      "verification": null
+    },
+    {
+      "event_id": "6",
+      "actor": "اختبار إنسان محاكى",
+      "actor_kind": "simulated_human",
+      "timestamp": "2026-11-05T12:00:00Z",
+      "snapshot_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01",
+      "action": "approve_with_exceptions",
+      "scope": "snapshot",
+      "finding_ids": [
+        "QA-001"
+      ],
+      "rule_id": null,
+      "rule_version": null,
+      "reason": "قرار اختبار صريح وليس اعتماد مستخدم فعلي",
+      "critical_reasons": {
+        "QA-001": "محاكاة اختبار فقط؛ لا اعتماد حقيقي أو نشر"
+      },
+      "verification": null
+    }
+  ],
+  "current_document_sha256": "6e1c16bf66f37df8d2a9d4dfcbfcaec5cc414e4493f0a8702be86005b4beff01"
+}

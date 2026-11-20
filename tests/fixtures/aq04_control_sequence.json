@@ -1,0 +1,1468 @@
+[
+  {
+    "title": "المخطط الأصلي",
+    "page": 2,
+    "formula": "X=\\frac4s(U-X)+U-3Y,\\quad Y=\\frac2sX",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "U",
+            "kind": "branch",
+            "x": 120,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "S1",
+            "kind": "sum",
+            "x": 240,
+            "y": 230,
+            "math": "",
+            "tag": "S1"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 370,
+            "y": 230,
+            "math": "\\frac{4}{s}"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 540,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "T",
+            "kind": "branch",
+            "x": 650,
+            "y": 230,
+            "math": "",
+            "tag": "x"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 760,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 880,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 740,
+            "y": 440,
+            "math": "3"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "U",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "U",
+            "end": "S1",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S1",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "T",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "S1",
+            "start_port": "top",
+            "end_port": "top",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 650,
+                "y": 80
+              },
+              {
+                "x": 240,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "U",
+            "end": "S2",
+            "start_port": "bottom",
+            "end_port": "lower_left",
+            "sign": "+",
+            "bends": [
+              {
+                "x": 120,
+                "y": 360
+              },
+              {
+                "x": 529.2,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 880,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "lower_right",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 550.8,
+                "y": 440
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "فصل الجامع ذي المداخل الثلاثة",
+    "page": 2,
+    "formula": "S_3=\\frac4s(U-X)+U,\\quad X=S_3-3Y",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "U",
+            "kind": "branch",
+            "x": 120,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "S1",
+            "kind": "sum",
+            "x": 240,
+            "y": 230,
+            "math": "",
+            "tag": "S1"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 350,
+            "y": 230,
+            "math": "\\frac{4}{s}"
+          },
+          {
+            "id": "S3",
+            "kind": "sum",
+            "x": 470,
+            "y": 230,
+            "math": "",
+            "tag": "S3"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 590,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "T",
+            "kind": "branch",
+            "x": 670,
+            "y": 230,
+            "math": "",
+            "tag": "x"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 770,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 890,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 760,
+            "y": 440,
+            "math": "3"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "U",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "U",
+            "end": "S1",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S1",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S3",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S3",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "T",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "S1",
+            "start_port": "top",
+            "end_port": "top",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 670,
+                "y": 80
+              },
+              {
+                "x": 240,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "U",
+            "end": "S3",
+            "start_port": "bottom",
+            "end_port": "bottom",
+            "sign": "+",
+            "bends": [
+              {
+                "x": 120,
+                "y": 360
+              },
+              {
+                "x": 470,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 890,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 590,
+                "y": 440
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "نقل الجامع بعد الكتلة وتبديل الجامعين",
+    "page": 3,
+    "formula": "V=(\\frac4s+1)U,\\quad T=V-\\frac4sT-3Y",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "U",
+            "kind": "branch",
+            "x": 120,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 260,
+            "y": 230,
+            "math": "\\frac{4}{s}"
+          },
+          {
+            "id": "S3",
+            "kind": "sum",
+            "x": 390,
+            "y": 230,
+            "math": "",
+            "tag": "S3"
+          },
+          {
+            "id": "S1",
+            "kind": "sum",
+            "x": 520,
+            "y": 230,
+            "math": "",
+            "tag": "S1"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 640,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "T",
+            "kind": "branch",
+            "x": 710,
+            "y": 230,
+            "math": "",
+            "tag": "T(s)"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 810,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 910,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 790,
+            "y": 440,
+            "math": "3"
+          },
+          {
+            "id": "F",
+            "kind": "block",
+            "x": 620,
+            "y": 80,
+            "math": "\\frac{4}{s}"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "U",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "U",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S3",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S3",
+            "end": "S1",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S1",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "T",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "F",
+            "start_port": "top",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 710,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "F",
+            "end": "S1",
+            "start_port": "left",
+            "end_port": "top",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 520,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "U",
+            "end": "S3",
+            "start_port": "bottom",
+            "end_port": "bottom",
+            "sign": "+",
+            "bends": [
+              {
+                "x": 120,
+                "y": 360
+              },
+              {
+                "x": 390,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 910,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 640,
+                "y": 440
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "جمع فرعي الدخل",
+    "page": 3,
+    "formula": "\\frac4s+1=\\frac{s+4}{s}",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 220,
+            "y": 230,
+            "math": "\\frac{s+4}{s}"
+          },
+          {
+            "id": "S1",
+            "kind": "sum",
+            "x": 400,
+            "y": 230,
+            "math": "",
+            "tag": "S1"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 550,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "T",
+            "kind": "branch",
+            "x": 650,
+            "y": 230,
+            "math": "",
+            "tag": "T(s)"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 760,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 880,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 750,
+            "y": 420,
+            "math": "3"
+          },
+          {
+            "id": "F",
+            "kind": "block",
+            "x": 530,
+            "y": 80,
+            "math": "\\frac{4}{s}"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S1",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S1",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "T",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "F",
+            "start_port": "top",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 650,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "F",
+            "end": "S1",
+            "start_port": "left",
+            "end_port": "top",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 400,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 880,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 550,
+                "y": 420
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "تبديل الجامعين لإظهار الحلقة الداخلية",
+    "page": 3,
+    "formula": "T=V-3Y-\\frac4sT",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 220,
+            "y": 230,
+            "math": "\\frac{s+4}{s}"
+          },
+          {
+            "id": "S1",
+            "kind": "sum",
+            "x": 550,
+            "y": 230,
+            "math": "",
+            "tag": "S1"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 400,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "T",
+            "kind": "branch",
+            "x": 650,
+            "y": 230,
+            "math": "",
+            "tag": "T(s)"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 760,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 880,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 750,
+            "y": 420,
+            "math": "3"
+          },
+          {
+            "id": "F",
+            "kind": "block",
+            "x": 600,
+            "y": 80,
+            "math": "\\frac{4}{s}",
+            "width": 60
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "S1",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S1",
+            "end": "T",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "T",
+            "end": "F",
+            "start_port": "top",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 650,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "F",
+            "end": "S1",
+            "start_port": "left",
+            "end_port": "top",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 550,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 880,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 400,
+                "y": 420
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "اختزال الحلقة الداخلية",
+    "page": 4,
+    "formula": "\\frac{1}{1+4/s}=\\frac{s}{s+4}",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 220,
+            "y": 230,
+            "math": "\\frac{s+4}{s}"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 400,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "C",
+            "kind": "block",
+            "x": 550,
+            "y": 230,
+            "math": "\\frac{s}{s+4}"
+          },
+          {
+            "id": "B",
+            "kind": "block",
+            "x": 750,
+            "y": 230,
+            "math": "\\frac{2}{s}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 880,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 650,
+            "y": 420,
+            "math": "3"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "C",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "C",
+            "end": "B",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "B",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 880,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 400,
+                "y": 420
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "دمج الكتلتين المتتاليتين",
+    "page": 4,
+    "formula": "\\frac{s}{s+4}\\frac2s=\\frac2{s+4}",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 220,
+            "y": 230,
+            "math": "\\frac{s+4}{s}"
+          },
+          {
+            "id": "S2",
+            "kind": "sum",
+            "x": 400,
+            "y": 230,
+            "math": "",
+            "tag": "S2"
+          },
+          {
+            "id": "C",
+            "kind": "block",
+            "x": 650,
+            "y": 230,
+            "math": "\\frac{2}{s+4}"
+          },
+          {
+            "id": "Y",
+            "kind": "branch",
+            "x": 880,
+            "y": 230,
+            "math": ""
+          },
+          {
+            "id": "H",
+            "kind": "block",
+            "x": 650,
+            "y": 420,
+            "math": "3"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "S2",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "+",
+            "bends": []
+          },
+          {
+            "start": "S2",
+            "end": "C",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "C",
+            "end": "Y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "Y",
+            "end": "H",
+            "start_port": "bottom",
+            "end_port": "right",
+            "sign": "",
+            "bends": [
+              {
+                "x": 880,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "start": "H",
+            "end": "S2",
+            "start_port": "left",
+            "end_port": "bottom",
+            "sign": "-",
+            "bends": [
+              {
+                "x": 400,
+                "y": 420
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "اختزال الحلقة الخارجية",
+    "page": 4,
+    "formula": "\\frac{2/(s+4)}{1+3\\cdot2/(s+4)}=\\frac2{s+10}",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "A",
+            "kind": "block",
+            "x": 300,
+            "y": 230,
+            "math": "\\frac{s+4}{s}"
+          },
+          {
+            "id": "C",
+            "kind": "block",
+            "x": 650,
+            "y": 230,
+            "math": "\\frac{2}{s+10}"
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "A",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "A",
+            "end": "C",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "C",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "تابع النقل المكافئ",
+    "page": 4,
+    "formula": "G(s)=\\frac{s+4}{s}\\frac2{s+10}=\\frac{2(s+4)}{s(s+10)}",
+    "figure": {
+      "kind": "control_diagram",
+      "control": {
+        "nodes": [
+          {
+            "id": "u",
+            "kind": "input",
+            "x": 40,
+            "y": 230,
+            "math": "u(t)"
+          },
+          {
+            "id": "y",
+            "kind": "output",
+            "x": 960,
+            "y": 230,
+            "math": "y(t)"
+          },
+          {
+            "id": "G",
+            "kind": "block",
+            "x": 500,
+            "y": 230,
+            "math": "\\frac{2(s+4)}{s(s+10)}",
+            "width": 180,
+            "height": 76
+          }
+        ],
+        "edges": [
+          {
+            "start": "u",
+            "end": "G",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          },
+          {
+            "start": "G",
+            "end": "y",
+            "start_port": "right",
+            "end_port": "left",
+            "sign": "",
+            "bends": []
+          }
+        ]
+      }
+    }
+  }
+]

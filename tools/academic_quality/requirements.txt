@@ -1,0 +1,5 @@
+jsonschema>=4
+Pillow>=10
+lxml>=4.9
+CairoSVG>=2.7
+PyMuPDF>=1.24

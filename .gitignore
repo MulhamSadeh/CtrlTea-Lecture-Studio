@@ -1,0 +1,26 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.sqlite*
+*.db
+*.dump
+*.log
+mail/
+profiles/
+private/
+data/
+output/
+.tools/
+# Build artifacts and private font binaries
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/public/fonts/
+assets/fonts/*.ttf
+assets/fonts/*.otf
+assets/fonts/*.woff*

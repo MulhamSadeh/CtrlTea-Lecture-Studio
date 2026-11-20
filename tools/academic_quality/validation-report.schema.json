@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "implementation": {
+      "type": "string"
+    },
+    "document": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "name",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "mode": {
+      "type": "string"
+    },
+    "sidecar_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_id": {
+            "type": "string"
+          },
+          "implementation": {
+            "type": "string"
+          },
+          "snapshot_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "location": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "pass",
+              "fail",
+              "warning",
+              "unverified",
+              "not_applicable"
+            ]
+          },
+          "expected": {},
+          "actual": {},
+          "evidence": {},
+          "limits": {
+            "type": "string"
+          },
+          "reproduce": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "check_id",
+          "implementation",
+          "snapshot_sha256",
+          "location",
+          "status",
+          "expected",
+          "actual",
+          "evidence",
+          "limits",
+          "reproduce"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "pass": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fail": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "warning": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unverified": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "not_applicable": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "pass",
+        "fail",
+        "warning",
+        "unverified",
+        "not_applicable"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "implementation",
+    "document",
+    "mode",
+    "sidecar_sha256",
+    "checks",
+    "summary"
+  ],
+  "additionalProperties": false
+}

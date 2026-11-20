@@ -1,0 +1,208 @@
+{
+  "figure": {
+    "kind": "control_diagram",
+    "control": {
+      "nodes": [
+        {
+          "id": "u",
+          "kind": "input",
+          "x": 40,
+          "y": 230,
+          "math": "u(t)"
+        },
+        {
+          "id": "y",
+          "kind": "output",
+          "x": 960,
+          "y": 230,
+          "math": "y(t)"
+        },
+        {
+          "id": "U",
+          "kind": "branch",
+          "x": 120,
+          "y": 230,
+          "math": ""
+        },
+        {
+          "id": "S1",
+          "kind": "sum",
+          "x": 240,
+          "y": 230,
+          "math": "",
+          "tag": "S1"
+        },
+        {
+          "id": "A",
+          "kind": "block",
+          "x": 370,
+          "y": 230,
+          "math": "\\frac{4}{s}"
+        },
+        {
+          "id": "S2",
+          "kind": "sum",
+          "x": 540,
+          "y": 230,
+          "math": "",
+          "tag": "S2"
+        },
+        {
+          "id": "T",
+          "kind": "branch",
+          "x": 650,
+          "y": 230,
+          "math": "",
+          "tag": "x"
+        },
+        {
+          "id": "B",
+          "kind": "block",
+          "x": 760,
+          "y": 230,
+          "math": "\\frac{2}{s}"
+        },
+        {
+          "id": "Y",
+          "kind": "branch",
+          "x": 880,
+          "y": 230,
+          "math": ""
+        },
+        {
+          "id": "H",
+          "kind": "block",
+          "x": 740,
+          "y": 440,
+          "math": "3"
+        }
+      ],
+      "edges": [
+        {
+          "start": "u",
+          "end": "missing",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "U",
+          "end": "S1",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "+",
+          "bends": []
+        },
+        {
+          "start": "S1",
+          "end": "A",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "A",
+          "end": "S2",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "+",
+          "bends": []
+        },
+        {
+          "start": "S2",
+          "end": "T",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "T",
+          "end": "B",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "B",
+          "end": "Y",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "Y",
+          "end": "y",
+          "start_port": "right",
+          "end_port": "left",
+          "sign": "",
+          "bends": []
+        },
+        {
+          "start": "T",
+          "end": "S1",
+          "start_port": "top",
+          "end_port": "top",
+          "sign": "-",
+          "bends": [
+            {
+              "x": 650,
+              "y": 80
+            },
+            {
+              "x": 240,
+              "y": 80
+            }
+          ]
+        },
+        {
+          "start": "U",
+          "end": "S2",
+          "start_port": "bottom",
+          "end_port": "lower_left",
+          "sign": "+",
+          "bends": [
+            {
+              "x": 120,
+              "y": 360
+            },
+            {
+              "x": 529.2,
+              "y": 360
+            }
+          ]
+        },
+        {
+          "start": "Y",
+          "end": "H",
+          "start_port": "bottom",
+          "end_port": "right",
+          "sign": "",
+          "bends": [
+            {
+              "x": 880,
+              "y": 440
+            }
+          ]
+        },
+        {
+          "start": "H",
+          "end": "S2",
+          "start_port": "left",
+          "end_port": "lower_right",
+          "sign": "-",
+          "bends": [
+            {
+              "x": 550.8,
+              "y": 440
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

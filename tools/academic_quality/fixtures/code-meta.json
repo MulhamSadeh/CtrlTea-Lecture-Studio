@@ -1,0 +1,22 @@
+{
+  "expected_omml": 1,
+  "tables": {
+    "0": [
+      [
+        "x",
+        "value"
+      ],
+      [
+        "x",
+        "1"
+      ]
+    ]
+  },
+  "code_blocks": [
+    {
+      "id": "vhdl-demo",
+      "start": "ENTITY split_demo IS",
+      "end": "END rtl;"
+    }
+  ]
+}

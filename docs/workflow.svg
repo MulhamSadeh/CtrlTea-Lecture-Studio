@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-label="Workflow: course, sources, editor, review and export">
+<rect width="980" height="260" rx="20" fill="#f8f7f4"/>
+<text x="490" y="42" font-family="Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#252525">Ctrl+Tea Lecture Studio — local workflow</text>
+<g font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">
+ <rect x="28" y="105" width="155" height="74" rx="12" fill="#eee8df" stroke="#655846" stroke-width="2"/><text x="105" y="138" fill="#222">Course &amp; lecture</text><text x="105" y="159" font-size="12" font-weight="normal" fill="#5c564c">Create / organize</text>
+ <rect x="224" y="105" width="155" height="74" rx="12" fill="#eee8df" stroke="#655846" stroke-width="2"/><text x="302" y="138" fill="#222">Source files</text><text x="302" y="159" font-size="12" font-weight="normal" fill="#5c564c">PDF / OCR / text</text>
+ <rect x="420" y="105" width="155" height="74" rx="12" fill="#e3eadf" stroke="#697b57" stroke-width="2"/><text x="498" y="138" fill="#222">Block editor</text><text x="498" y="159" font-size="12" font-weight="normal" fill="#576850">Math / diagrams</text>
+ <rect x="616" y="105" width="155" height="74" rx="12" fill="#e3eadf" stroke="#697b57" stroke-width="2"/><text x="694" y="138" fill="#222">Human review</text><text x="694" y="159" font-size="12" font-weight="normal" fill="#576850">Content &amp; layout</text>
+ <rect x="812" y="105" width="140" height="74" rx="12" fill="#eee8df" stroke="#655846" stroke-width="2"/><text x="882" y="138" fill="#222">Export</text><text x="882" y="159" font-size="12" font-weight="normal" fill="#5c564c">DOCX / PDF</text>
+</g>
+<g stroke="#4c6350" stroke-width="3" fill="none" stroke-linecap="round"><path d="M184 142 H218 M212 136 l7 6 -7 6"/><path d="M380 142 H414 M408 136 l7 6 -7 6"/><path d="M576 142 H610 M604 136 l7 6 -7 6"/><path d="M772 142 H806 M800 136 l7 6 -7 6"/></g>
+<text x="490" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5f6459">Illustrative architecture flow — not a live service screenshot</text>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "complete_coverage": true,
+  "source_fidelity_verified": true,
+  "dimensions": {
+    "scientific": {
+      "status": "verified",
+      "ratings": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    },
+    "completeness": {
+      "status": "verified",
+      "ratings": [
+        4,
+        4,
+        4,
+        4,
+        1,
+        4
+      ],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    },
+    "math": {
+      "status": "verified",
+      "ratings": [
+        4,
+        1,
+        4
+      ],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    },
+    "diagrams_tables": {
+      "status": "not_applicable",
+      "ratings": [],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    },
+    "writing": {
+      "status": "verified",
+      "ratings": [
+        4,
+        4,
+        4
+      ],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    },
+    "organization": {
+      "status": "verified",
+      "ratings": [
+        4
+      ],
+      "reason": "وحدات التقرير الأصلي؛ لا تغيير للتقدير"
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "insufficient",
+  "assessment": {
+    "document": {
+      "id": "lecture",
+      "name": "case12/lecture.md",
+      "sha256": "9e99431c3b921ff5307403670147a992208a004d1b44f99e45d133d02c6988c0"
+    },
+    "sources": [],
+    "skill_version": "AQ-05 1.0.0",
+    "rubric_version": "AQ01-provisional-1",
+    "metadata": {
+      "reviewer": "مراجعة AQ05 للمقتطف التجريبي",
+      "model": null,
+      "configuration": "نص محدد النطاق؛ حساب كسور مستقل",
+      "created_at": "2026-11-05"
+    },
+    "coverage": {
+      "status": "complete",
+      "reviewed_scope": "المحور الأول فقط، جميع أسطر المقتطف ومصدره",
+      "reviewed_locations": [
+        "lecture.md كاملًا"
+      ],
+      "unreviewed_locations": [],
+      "source_fidelity": "unverified",
+      "source_inventory": []
+    },
+    "evidence": [
+      {
+        "id": "E3",
+        "artifact_id": "lecture",
+        "locator": "lecture.md كاملًا",
+        "method": "قراءة النص وحساب الصفوف استقلالًا",
+        "observation": "النموذج والصفوف والعمليات متسقة حسابيًا؛ لا أصل مرفق",
+        "result": "صحة المقتطف قابلة للفحص؛ الأمانة والاكتمال بالنسبة للأصل غير متحققين",
+        "tool_version": "Python fractions"
+      }
+    ],
+    "dimensions": [
+      {
+        "criterion": "scientific",
+        "weight": 30,
+        "effective_weight": 35.294117647058826,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "الحساب المقدم صحيح ضمن المقتطف",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "scientific-1",
+            "scope": "نتائج المحور الأول كوحدة حسابية واحدة",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "completeness",
+        "weight": 20,
+        "effective_weight": 23.529411764705884,
+        "status": "unverified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": null,
+        "reason": "الأصل غير مقدم",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "completeness-1",
+            "scope": "عناصر مقتطف المصدر: النموذج والصفوف والاختيار والتطبيع والتصفير والقراءة",
+            "rating": null,
+            "status": "unverified",
+            "reason": "لا يمكن إثبات عناصر الأصل الغائب",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "math",
+        "weight": 20,
+        "effective_weight": 23.529411764705884,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "math-1",
+            "scope": "الرموز والعمليات المتجهية",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "diagrams_tables",
+        "weight": 15,
+        "effective_weight": 0,
+        "status": "not_applicable",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": null,
+        "reason": "لا أشكال ولا جداول مطلوبة في المقتطف",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": []
+      },
+      {
+        "criterion": "writing",
+        "weight": 10,
+        "effective_weight": 11.764705882352942,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "writing-1",
+            "scope": "الشرح الذي يربط اختيار المحور بتصفير العمود",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      },
+      {
+        "criterion": "organization",
+        "weight": 5,
+        "effective_weight": 5.882352941176471,
+        "status": "verified",
+        "scope": "المقتطف النصي المقدم فقط؛ ليس كامل محاضرة",
+        "score": 100,
+        "reason": "فحص الوحدة المحددة ضمن المقتطف؛ لا خصم إضافي للخطأ نفسه",
+        "evidence_ids": [
+          "E3"
+        ],
+        "units": [
+          {
+            "id": "organization-1",
+            "scope": "ترتيب المقتطف النصي",
+            "rating": 4,
+            "status": "verified",
+            "reason": "تقدير مراجع تجريبي وفق 0..4 للنطاق المعلن",
+            "evidence_ids": [
+              "E3"
+            ]
+          }
+        ]
+      }
+    ],
+    "overall_score": null,
+    "withheld_reason": "لا مصدر أصلي لإثبات الاكتمال والأمانة",
+    "findings": [],
+    "critical_finding_ids": [],
+    "limitations": [
+      "المصدر الأصلي غير مرفق",
+      "لا تصدير ورقي مقدم"
+    ],
+    "recommendation": "تقرير محدود؛ يلزم المصدر قبل الدرجة الإجمالية",
+    "extensions": {}
+  },
+  "assessment_sha256": "99e358c4cdf6c5cb59d48cfde437087fcda3a6544782f5c3b59d8fd615923822",
+  "human_events": [],
+  "current_document_sha256": "9e99431c3b921ff5307403670147a992208a004d1b44f99e45d133d02c6988c0"
+}
